@@ -1,0 +1,30 @@
+# config.toml
+
+baseURL = "https://your_web_site"
+title = "Beer and beer"
+theme = "gohugo-theme-ananke"
+
+# Enter a copyright notice to display in the site footer.
+# To display a copyright symbol, type `&copy;`.
+copyright = "&copy;Your Name 2019"
+
+[frontmatter]
+# update sitemap.xml's lastmod datetime by file change time, instead of git.
+lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[params]
+  mainSections = ["beer"]
+
+[menu]
+
+  [[menu.main]]
+    identifier = "Breweries"
+    name = "Brewery"
+    title = "Breweries"
+    url = "/brewery/"
+
+  [[menu.main]]
+    identifier = "Beer"
+    name = "Beer"
+    title = "Beers"
+    url = "/beer/"
