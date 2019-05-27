@@ -1,4 +1,3 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-
+  name: github
+  repo: chriguc/beerhugo # Path to your GitHub repository
